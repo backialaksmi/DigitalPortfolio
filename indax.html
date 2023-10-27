@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <!-- Add your profile picture here -->
+         <img
+          src="img1.jpg"
+          alt="Your Profile Picture"
+          class="profile-picture"
+         />
+        <h1>BACKIALAKSHMI...</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+    <section id="about">
+      <div class="section-content">
+        <h2>About Me</h2>
+        <p>
+          Hi i am Backialakshmi ,computer science student and well learning for
+          wed development course
+        </p>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="section-content">
+        <h2>Education</h2>
+        <h2>Degree:BACHELOR OF SCIENCE IN COMPUTER SCIENCE STUDENT</h2>
+        <p>THANTHAI PERIYAR GOVT.ARTS & SCIENCE COLLEGE,TRICHIRAPALLI</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-content">
+        <h2>Skills</h2>
+        <ul>
+          <li>programing languages:HTML,CSS,JAVASCRIPT</li>
+          <li>web developement tools:VISUAL BASIC CODE,NOTEPAD++</li>
+          <li>VERSION CONTROL:GIT&GITUP</li>
+          <li>STRONG ANALYTICAL SKILLS</li>
+          <li>PROBLEM SOLVING</li>
+          <li>LARGICAL THINKING</li>
+          <li>KNOW LANGUAGES:TAMIL&ENGILSH</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-content">
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <a href="nm_1/indax.html">Project 1:personal portfolio website</a>
+          </li>
+          <!-- Add more project links here -->
+          <li><a href="admission.html">Project 2:educational website</a></li>
+          <li>
+            <a href="admission.html"
+              >Project 3:github profile&version control</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="resume">
+      <center>
+        <div class="section-content">
+          <h2>Resume</h2>
+          <a
+            href="Resume_Backiya_Format1.pdf"
+            class="download-button"
+            >Download CV</a
+          >
+        </div>
+      </center>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 BACKIALAKSHMI</p>
+    </footer>
+
+    <script>
+      // Smooth scrolling to section when clicking on navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
